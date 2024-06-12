@@ -1,5 +1,12 @@
+import { ChakraProvider } from '@chakra-ui/react';
+import { ToDoList } from './components/todo-list/ToDoList';
+
 function App() {
-  return <div className="App"></div>;
+  return (
+    <ChakraProvider>
+      <ToDoList />
+    </ChakraProvider>
+  );
 }
 
 export default App;
